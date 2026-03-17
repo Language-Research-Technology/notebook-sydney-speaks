@@ -3,11 +3,12 @@ name = "notebook-sydney-speaks"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.14"
+requires-python = ">=3.11"
 dependencies = [
     "appmode>=1.1.0",
     "ipywidgets>=8.1.8",
     "ldaca",
+    "pandas>=3.0.1",
     "pyrfc6266>=1.0.2",
     "tqdm>=4.67.3",
 ]

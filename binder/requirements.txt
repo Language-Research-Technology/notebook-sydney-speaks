@@ -65,7 +65,11 @@ iniconfig==2.3.0
     # via pytest
 ipykernel==7.2.0
     # via nbclassic
-ipython==9.11.0
+ipython==9.10.0 ; python_full_version < '3.12'
+    # via
+    #   ipykernel
+    #   ipywidgets
+ipython==9.11.0 ; python_full_version >= '3.12'
     # via
     #   ipykernel
     #   ipywidgets
@@ -148,6 +152,8 @@ notebook-shim==0.2.4
     # via nbclassic
 numpy==2.4.3
     # via pandas
+overrides==7.7.0 ; python_full_version < '3.12'
+    # via jupyter-server
 packaging==26.0
     # via
     #   ipykernel
@@ -158,6 +164,7 @@ packaging==26.0
 pandas==3.0.1
     # via
     #   ldaca
+    #   notebook-sydney-speaks
     #   rocrate-lang
 pandocfilters==1.5.1
     # via nbconvert
@@ -284,7 +291,11 @@ traitlets==5.14.3
     #   nbconvert
     #   nbformat
 typing-extensions==4.15.0
-    # via beautifulsoup4
+    # via
+    #   anyio
+    #   beautifulsoup4
+    #   ipython
+    #   referencing
 tzdata==2025.3
     # via
     #   arrow
