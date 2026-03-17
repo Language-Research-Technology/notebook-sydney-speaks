@@ -247,7 +247,7 @@ rfc3987-syntax==1.1.0
     # via jsonschema
 rocrate==0.14.2
     # via rocrate-lang
-rocrate-lang @ git+https://github.com/Language-Research-Technology/rocrate-lang-py@17b4765d6fd6315fb8841fdcea9fdf284d020fe5
+rocrate-lang @ git+https://github.com/Language-Research-Technology/rocrate-lang-py
     # via ldaca
 rpds-py==0.30.0
     # via
